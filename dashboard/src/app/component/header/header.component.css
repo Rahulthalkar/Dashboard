@@ -1,0 +1,35 @@
+.openSidebar {
+    display: none; /* Hide by default */
+}
+
+.notification {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  right: -71px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.notification:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 768px) { /* Adjust this width as needed */
+    .openSidebar {
+        display: block; /* Show on smaller screens */
+    }
+    .logos-text{
+        display: none;
+    }
+    .dropdown-content{
+        width: 320px;
+    }
+}

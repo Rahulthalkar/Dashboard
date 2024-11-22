@@ -1,0 +1,24 @@
+.sidebar-menu {
+    width: 19%;
+    display: inline-block;
+    transition: width 0.3s; /* Smooth transition when opening/closing */
+}
+
+.main-content {
+    width: 80%;
+    display: inline-block;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+@media screen and (max-width: 768px) {
+    .sidebar-menu {
+        width: 0; /* Collapse sidebar on small screens */
+        display: block;
+    }
+    .main-content {
+        width: 100%; /* Expand main content on small screens */
+        display: block;
+    }
+}

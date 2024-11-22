@@ -1,0 +1,9 @@
+<app-header (sidebarToggle)="openNav()"></app-header>
+<div class="container-fluid mt-5 pt-2">
+    <div class="sidebar-menu">
+      <app-sidebar [sidebarWidth]="sidebarWidth"></app-sidebar>
+    </div>
+    <div id="main" class="py-3 main-content ">
+        <router-outlet></router-outlet>
+    </div>
+</div>
